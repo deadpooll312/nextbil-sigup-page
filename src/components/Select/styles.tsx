@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 export const SelectComponent = styled.select`
@@ -22,6 +23,15 @@ export const SelectComponent = styled.select`
         outline: none !important;
         border: 0px solid #0094FF;
         box-shadow: 0 0 1px #719ECE;
-    }
-    
+    }  
+`;
+
+
+// const IconWrapperElement: React.DetailedHTMLProps<React.HTMLAttributes<HTMLSpanElement>, HTMLSpanElement> = (props) => <span {...props}>{props.children}</span>   ;
+
+export const IconWrapper = styled.span`
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%) rotate(180deg);
 `;

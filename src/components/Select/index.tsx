@@ -2,8 +2,9 @@ import React from "react";
 
 import FormElement from "../FormElement";
 import {ISelect} from "../../common/types";
+import {ArrowIcon} from "../icons";
 
-import {SelectComponent} from "./styles";
+import {SelectComponent, IconWrapper} from "./styles";
 
 const Select: React.FC<ISelect> = ({list, ...rest}) => {
     const options = list.map(item => <option key={item.value} value={item.value} >{item.label}</option>);
@@ -12,6 +13,7 @@ const Select: React.FC<ISelect> = ({list, ...rest}) => {
         <SelectComponent {...rest}>
             {options}
         </SelectComponent>
+        <IconWrapper><ArrowIcon /></IconWrapper>
     </FormElement>
 };
 
