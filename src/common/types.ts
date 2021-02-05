@@ -15,6 +15,10 @@ export interface IInput extends InputHTMLAttributes<HTMLInputElement>{
     icon?: JSX.Element;
 }
 
+export interface InputComponentProps extends InputHTMLAttributes<HTMLInputElement>{
+    withicon?: string;
+}
+
 export interface IFormElement {
     name: string,
     className?: string,

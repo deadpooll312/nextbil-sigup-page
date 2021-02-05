@@ -5,7 +5,6 @@ import {IFormElement} from "./../../common/types";
 
 import {Div, Children, Error} from "./styles"
 
-
 const FormElement: React.FC<IFormElement> = (
     {
         name,

@@ -26,9 +26,6 @@ export const SelectComponent = styled.select`
     }  
 `;
 
-
-// const IconWrapperElement: React.DetailedHTMLProps<React.HTMLAttributes<HTMLSpanElement>, HTMLSpanElement> = (props) => <span {...props}>{props.children}</span>   ;
-
 export const IconWrapper = styled.span`
     position: absolute;
     top: 50%;

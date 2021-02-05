@@ -1,6 +1,5 @@
 import * as yup from "yup";
 
-
 export const stringRequired = (text?: string) =>
     yup
         .string()
@@ -16,7 +15,6 @@ export const emailRequired = (text?: string) =>
 export const booleanRequired = (text?: string) =>
     yup
         .boolean().oneOf([true], text || "Field is required");
-
 
 export const signUpSchema = yup.object().shape({
     name: stringRequired("You must input your name").matches(

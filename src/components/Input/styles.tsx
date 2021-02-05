@@ -1,11 +1,8 @@
-import React, {InputHTMLAttributes} from "react";
+import React from "react";
 import styled from "styled-components";
+import {InputComponentProps} from "../../common/types";
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
-    withicon?: string;
-}
-
-const Input: React.FunctionComponent<InputProps> = (props) => <input {...props} />;
+const Input: React.FunctionComponent<InputComponentProps> = (props) => <input {...props} />;
 
 export const InputComponent = styled(Input)`
     width:  ${props => props.withicon ? "84%" : "92%"}; 

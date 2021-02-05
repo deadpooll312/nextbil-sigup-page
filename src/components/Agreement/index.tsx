@@ -1,6 +1,7 @@
 import React, {useRef} from "react";
 
 import {IAgreement} from "../../common/types";
+
 import {AgreementContainer, Checkbox, CheckMark, AgreementText, Link} from "./styles";
 import FormElement from "../FormElement";
 
